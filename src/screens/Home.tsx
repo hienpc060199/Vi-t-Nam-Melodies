@@ -1,11 +1,11 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import HomeList from "../components/HomeList";
 import { data } from "../data/dataHome";
 import SearchHome from "../components/SearchHome";
 import unorm from 'unorm';
-import { Box, ScrollView } from "native-base";
+import { Box, ScrollView, Image } from "native-base";
 
 const dataHome = data.itemsHome;
 
@@ -37,8 +37,8 @@ const Home = () => {
       <Box style={styles.header}>
         <Image
           style={styles.imgHeader}
-          height={36}
-          source={require("../../assets/img/image1.png")}
+          height={260}
+          source={require("../../assets/img/imgHome.jpg")}
         />
         <SearchHome onSearch={handleSearch} />
       </Box>

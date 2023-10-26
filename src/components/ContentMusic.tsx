@@ -73,7 +73,7 @@ const ContentMusic = ({ data, ytb }: any) => {
 
               <View style={styles.textOption}>
                 <Text style={styles.subtextOption}>{data.title}</Text>
-                <Text>Yoed Nir</Text>
+                <Text>Bấm vào để nghe</Text>
               </View>
             </View>
           </Box>

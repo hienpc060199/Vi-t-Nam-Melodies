@@ -1,25 +1,31 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { Box } from 'native-base'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Center, Image } from 'native-base';
 
 const HeaderUsing = ({dataUsing}: any) => {
     const inset = useSafeAreaInsets();
     const dataUs = dataUsing.data;
     
     return (
-      <View style={styles.header}>
-        <Image
-          style={styles.imgHeader}
-          height={36}
-          source={dataUs.bigImage}
-        />
+      <Box style={styles.header}>
+        {/* <Box> */}
+          {/* <Image
+            style={styles.imgHeader}
+            // height={32}
+            source={dataUs.bigImage}
+          /> */}
+              {/* <Center> */}
+                <Image source={dataUs.bigImage} alt="Alternate Text" size='xl' height={260} style={styles.imgHeader} />
+          {/* </Center> */}
+        {/* </Box> */}
         <Box style={[styles.searchHeader, { paddingTop: inset.top }]}>
           <Text style={{ color: "white" }}>
-            2CELLOS - Thunderstruck [OFFICIAL VIDEO]
+            {dataUs.title} - {dataUs.subtitle}
           </Text>
         </Box>
-      </View>
+      </Box>
     );
 }
 

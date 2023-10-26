@@ -32,7 +32,7 @@ const ContentUsing = ({ dataUsing }: any) => {
       </View>
 
       <View style={styles.text}>
-        <Text style={styles.textTitle}>Những điều thú vị về Cello</Text>
+        <Text style={styles.textTitle}>Những điều thú vị về {dataUs.title}</Text>
         <Text style={styles.textSubText}>{dataUs.interesting}</Text>
       </View>
     </View>

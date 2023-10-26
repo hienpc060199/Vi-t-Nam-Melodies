@@ -23,7 +23,7 @@ const HomeList = ({ data }: { data: any[] }) => {
           return (
             <Box style={styles.menuOption}>
               <View style={styles.musicalOption}>
-                <Image source={item.image}></Image>
+                <Image source={item.image} width={16} height={16} borderRadius={10}></Image>
                 <View style={styles.textOption}>
                   <Text style={styles.subtextOption}>{item.title}</Text>
                   <Text>{item.subtitle}</Text>
@@ -51,7 +51,7 @@ const HomeList = ({ data }: { data: any[] }) => {
           return (
             <Box style={styles.menuOption}>
               <View style={styles.musicalOption}>
-                <Image source={item.image}></Image>
+                <Image source={item.image}  width={16} height={16}   borderRadius={10}></Image>
                 <View style={styles.textOption}>
                   <Text style={styles.subtextOption}>{item.title}</Text>
                   <Text>{item.subtitle}</Text>
@@ -79,7 +79,7 @@ const HomeList = ({ data }: { data: any[] }) => {
           return (
             <Box style={styles.menuOption}>
               <View style={styles.musicalOption}>
-                <Image source={item.image}></Image>
+                <Image source={item.image}  width={16} height={16} borderRadius={10}></Image>
                 <View style={styles.textOption}>
                   <Text style={styles.subtextOption}>{item.title}</Text>
                   <Text>{item.subtitle}</Text>
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   musicalOption: {
     display: "flex",
     flexDirection: "row",
-    width: "80%",
+    width: "90%",
     alignItems: "center",
   },
 
@@ -149,7 +149,9 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
 
-  iconOption: {},
+  iconOption: {
+    width: '20%',
+  },
 
   btnPlay: {
     backgroundColor: "#fff",
@@ -160,9 +162,8 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     marginBottom: 16,
-    // paddingHorizontal: 6,
     paddingVertical: 14,
-    paddingHorizontal: 22,
+    paddingHorizontal: 30,
   },
 
   opitonMs: {

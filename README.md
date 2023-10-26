@@ -25,9 +25,10 @@ Explore and experience traditional music of the three regions of North, Central 
 ## Screenshots
 
 <p float='left'>
+<img src="images/home.png" width="45%" alt='screen1'>
 <img src="images/search.png" width="45%" alt='screen1'>
 <img src="images/interestingThings.png" width="45%" alt='screen1'>
-<img src="images/search.png" width="45%" alt='screen1'>
+<img src="images/audio.png" width="45%" alt='screen1'>
 </p>
 
 
